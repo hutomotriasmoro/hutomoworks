@@ -194,8 +194,8 @@ footer{background:#1e1712;padding:24px 48px;display:flex;justify-content:space-b
 .footer-copy{font-size:11px;color:rgba(255,255,255,0.2);}
 
 /* REVEAL */
-.reveal{opacity:0;transform:translateY(22px);transition:opacity 0.7s ease,transform 0.7s ease;}
-.reveal.visible{opacity:1;transform:translateY(0);}
+.reveal{opacity:1;transform:none;}
+.reveal.visible{opacity:1;transform:none;}
 
 /* RESPONSIVE */
 @media(max-width:960px){
@@ -449,13 +449,13 @@ footer{background:#1e1712;padding:24px 48px;display:flex;justify-content:space-b
     <div class="bi-en">Open for collaboration as a trainer, L&D consultant, or coach — fully remote-ready, anywhere in the world.</div>
   </div>
   <div class="contact-btns reveal">
-    <a href="mailto:hutomo.triasmoro08@gmail.com?subject=Halo%20Hutomo%2C%20saya%20tertarik%20berkolaborasi" class="btn-primary">Email Saya · Email Me</a>
+    <a href="/cdn-cgi/l/email-protection#e68e9392898b89c892948f87958b899489d6dea6818b878f8ac885898bd99593848c838592dbae878a89c3d4d6ae9392898b89c3d4a5c3d4d695879f87c3d4d69283949287948f8dc3d4d68483948d898a8784899487958f" class="btn-primary">Email Saya · Email Me</a>
     <a href="https://wa.me/628561891317" class="btn-sage" target="_blank">WhatsApp</a>
     <a href="https://www.linkedin.com/in/hutomo15" class="btn-ghost" target="_blank">LinkedIn →</a>
   </div>
   <div class="contact-details reveal">
     <div class="contact-detail">📍 Jakarta · Remote-ready 🌏</div>
-    <div class="contact-detail">✉️ hutomo.triasmoro08@gmail.com</div>
+    <div class="contact-detail">✉️ <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2c44595843414302585e454d5f41435e431c146c4b414d4540024f4341">[email&#160;protected]</a></div>
     <div class="contact-detail">📞 <a href="tel:+628561891317">+62 856 189 1317</a></div>
   </div>
 </section>
@@ -466,7 +466,7 @@ footer{background:#1e1712;padding:24px 48px;display:flex;justify-content:space-b
   <div class="footer-copy">© 2025 · Learning & People Development Consultant · Jakarta, Indonesia</div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const reveals = document.querySelectorAll('.reveal');
 const obs = new IntersectionObserver(entries => {
   entries.forEach((e,i) => { if(e.isIntersecting) setTimeout(()=>e.target.classList.add('visible'),i*70); });
@@ -480,8 +480,4 @@ window.addEventListener('load',()=>{
 
 let currentLang='id';
 function setLang(lang){
-  currentLang=lang;
-  document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));
-  document.querySelector(\`.lang-btn[onclick="setLang('${lang}')"]\`).classList.add('active');
-  document.querySelectorAll('.bi-id').forEach(el=>{el.style.opacity=lang==='id'?'1':'0.4';el.style.fontStyle=lang==='id'?'normal':'italic';});
-  document.querySelector
+  currentLang=la
